@@ -1,13 +1,380 @@
 ---
 layout: default
-title: Your New Jekyll Site
 ---
-
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Code+Pro:400,600,700,900/Source+Sans+Pro:400,600,900,400i">
+        <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    <body>
+    <div class="container">
+     <header>
+       <img src="/images/logo.svg" alt="" id="logo">
+<nav class="breadcrumb">
+  <a href="/" class="active">blog</a> /
+  <a href="/projects.html">projects</a> /
+  <a href="/resources.html">resources</a>
+</nav>      
+        
+     </header>
+     <section class="about">
+       <p>
+         I'm a front-end developer building and designing responsive websites &amp; applications. I'm currently in San Marcos, Texas &ndash; just south of Austin.
+       </p>
+     </section>
+     <section class="posts">
+      <ul class="posts-ul">
+      
+  
+  <li>
+    <span>October 16, 2014</span> <a href="/posts/inertia">Inertia</a>
+  </li>
+  
+  <li>
+    <span>October  3, 2014</span> <a href="/talk/move-fast-break-nothing">Move Fast and Break Nothing</a>
+  </li>
+  
+  <li>
+    <span>July 28, 2014</span> <a href="/posts/searching-github-issues">The Easily Amused's Guide to Searching GitHub Issues</a>
+  </li>
+  
+  <li>
+    <span>July 21, 2014</span> <a href="/posts/keeping-a-journal">Keeping a Journal</a>
+  </li>
+  
+  <li>
+    <span>March 14, 2014</span> <a href="/posts/github-communication">A Day of Communication at GitHub</a>
+  </li>
+  
+  <li>
+    <span>February 26, 2014</span> <a href="/posts/only-90s-developers">Only 90s Web Developers Remember This</a>
+  </li>
+  
+  <li>
+    <span>February 13, 2014</span> <a href="/posts/startups-mad-men-and-missing-out">Startups, Mad Men, and Missing Out</a>
+  </li>
+  
+  <li>
+    <span>January 17, 2014</span> <a href="/posts/travel-rewards-laziness">Travel Rewards for Lazy People</a>
+  </li>
+  
+  <li>
+    <span>January 15, 2014</span> <a href="/posts/who-owns">Who Owns?</a>
+  </li>
+  
+  <li>
+    <span>January 13, 2014</span> <a href="/posts/github-speaking-culture">GitHub's Public Speaking Culture</a>
+  </li>
+  
+  <li>
+    <span>November  6, 2013</span> <a href="/posts/debug-strings">wat the wtf do programmers use as debug strings?</a>
+  </li>
+  
+  <li>
+    <span>September  4, 2013</span> <a href="/posts/this-machine-rebases-branches">This Machine Rebases Branches</a>
+  </li>
+  
+  <li>
+    <span>August  6, 2013</span> <a href="/posts/inbox-zero-everything-zero">Inbox Zero, Everything Zero</a>
+  </li>
+  
+  <li>
+    <span>June 18, 2013</span> <a href="/posts/bugfixes-as-therapy">Bugfixes as Therapy</a>
+  </li>
+  
+  <li>
+    <span>April 29, 2013</span> <a href="/posts/positive-feedback">You Won't Regret Positive Feedback</a>
+  </li>
+  
+  <li>
+    <span>April 22, 2013</span> <a href="/posts/the-conference-circuit">The Conference Circuit</a>
+  </li>
+  
+  <li>
+    <span>January  7, 2013</span> <a href="/posts/retina">You Suck at Retina</a>
+  </li>
+  
+  <li>
+    <span>December 12, 2012</span> <a href="/posts/chat">Chat Trumps Meetings</a>
+  </li>
+  
+  <li>
+    <span>December 11, 2012</span> <a href="/posts/left">Left: A Jekyll Theme</a>
+  </li>
+  
+  <li>
+    <span>September 20, 2012</span> <a href="/posts/abusing-emoji">Abusing Emoji in iOS and Your Mac 👑💩</a>
+  </li>
+  
+  <li>
+    <span>June 21, 2012</span> <a href="/posts/how-to-screencast-your-talk">How to Screencast Your Talk</a>
+  </li>
+  
+  <li>
+    <span>June 19, 2012</span> <a href="/posts/what-they-dont-tell-you-about-public-speaking">What They Don't Tell You About Public Speaking</a>
+  </li>
+  
+  <li>
+    <span>April 27, 2012</span> <a href="/posts/how-to-survive-tech-conferences">How to Survive Tech Conferences</a>
+  </li>
+  
+  <li>
+    <span>February  2, 2012</span> <a href="/posts/the-apple-voice">The Apple Voice</a>
+  </li>
+  
+  <li>
+    <span>December 12, 2011</span> <a href="/posts/women-should-do-startups">Women Should Do Startups</a>
+  </li>
+  
+  <li>
+    <span>November 23, 2011</span> <a href="/posts/from-hack-to-popular-project">From "Hack" to "Popular Project"</a>
+  </li>
+  
+  <li>
+    <span>November  9, 2011</span> <a href="/posts/swearing">Swearing</a>
+  </li>
+  
+  <li>
+    <span>November  7, 2011</span> <a href="/screencast/play">Hubot Play</a>
+  </li>
+  
+  <li>
+    <span>November  2, 2011</span> <a href="/posts/shit-work">Don't Give Your Users Shit Work</a>
+  </li>
+  
+  <li>
+    <span>October 24, 2011</span> <a href="/posts/slide-design-for-developers">Slide Design for Developers</a>
+  </li>
+  
+  <li>
+    <span>September 28, 2011</span> <a href="/posts/scaling-github-employees">Scaling GitHub's Employees</a>
+  </li>
+  
+  <li>
+    <span>September  7, 2011</span> <a href="/posts/customer-support-doesnt-have-to-suck">Customer Support Doesn't Have to Suck</a>
+  </li>
+  
+  <li>
+    <span>September  6, 2011</span> <a href="/posts/glue-languages">Glue Languages Make You a Better Coder</a>
+  </li>
+  
+  <li>
+    <span>August 18, 2011</span> <a href="/posts/how-github-works-creativity">How GitHub Works: Creativity is Important</a>
+  </li>
+  
+  <li>
+    <span>August 17, 2011</span> <a href="/posts/how-github-works-asynchronous">How GitHub Works: Be Asynchronous</a>
+  </li>
+  
+  <li>
+    <span>August 16, 2011</span> <a href="/posts/how-github-works-hours">How GitHub Works: Hours are Bullshit</a>
+  </li>
+  
+  <li>
+    <span>August 15, 2011</span> <a href="/posts/how-github-works">How GitHub Works</a>
+  </li>
+  
+  <li>
+    <span>July 27, 2011</span> <a href="/posts/steve-jobs-sometimes-lies">Steve Jobs Sometimes Lies to You</a>
+  </li>
+  
+  <li>
+    <span>July 21, 2011</span> <a href="/posts/blog-marketing">Blog Marketing for Ego-Centric Assholes</a>
+  </li>
+  
+  <li>
+    <span>July 20, 2011</span> <a href="/posts/improving-yourself-is-easy">Improving Yourself is Easy</a>
+  </li>
+  
+  <li>
+    <span>July  1, 2011</span> <a href="/posts/parallaxing-parallax-on-ios">Parallaxing Parallax on iOS</a>
+  </li>
+  
+  <li>
+    <span>June  7, 2011</span> <a href="/posts/documentation">The Most Important Code Isn't Code</a>
+  </li>
+  
+  <li>
+    <span>May 13, 2011</span> <a href="/posts/fame">Fame</a>
+  </li>
+  
+  <li>
+    <span>April 18, 2011</span> <a href="/posts/open-source-marketing">Open Source Doesn't Just Market Itself</a>
+  </li>
+  
+  <li>
+    <span>April  4, 2011</span> <a href="/posts/why-github-hacks-on-side-projects">Why GitHub Hacks on Side Projects</a>
+  </li>
+  
+  <li>
+    <span>March 21, 2011</span> <a href="/2011/03/your-talk-looks-like-crap">Your Talk Looks Like Crap</a>
+  </li>
+  
+  <li>
+    <span>March 10, 2011</span> <a href="/2011/03/osx-isnt-for-developers">OS X Isn't for Developers</a>
+  </li>
+  
+  <li>
+    <span>March  4, 2011</span> <a href="/2011/03/drunk-quick-bar-lols">I Liked It When Quick Bars Got Me Drunk</a>
+  </li>
+  
+  <li>
+    <span>February 28, 2011</span> <a href="/2011/02/san-francisco">Winning San Francisco's Startup Scene</a>
+  </li>
+  
+  <li>
+    <span>February 21, 2011</span> <a href="/2011/02/new-apple-patent-shows-iphone-6-dispenses-ice-cream">New Apple Patent Shows iPhone 6 Dispensing Ice Cream</a>
+  </li>
+  
+  <li>
+    <span>February  7, 2011</span> <a href="/2011/02/graduated-with-a-major-in-startups">Graduated with a Major in Startups</a>
+  </li>
+  
+  <li>
+    <span>January 25, 2011</span> <a href="/2011/01/oauth_will_murder_your_children">OAuth Will Murder Your Children</a>
+  </li>
+  
+  <li>
+    <span>December 14, 2010</span> <a href="/2010/12/reputation">Reputation: kind of a big deal</a>
+  </li>
+  
+  <li>
+    <span>November 25, 2010</span> <a href="/2010/11/text-snippets-boom">Text Snippets. Boom.</a>
+  </li>
+  
+  <li>
+    <span>October 28, 2010</span> <a href="/2010/10/steal-the-code">Steal the Code</a>
+  </li>
+  
+  <li>
+    <span>October 21, 2010</span> <a href="/2010/10/facelette-on-techcrunch-in-three-hours-and-zero-dollars">Facelette: On TechCrunch in Three Hours and $0</a>
+  </li>
+  
+  <li>
+    <span>October 17, 2010</span> <a href="/2010/10/my-favorites-from-rails-rumble-2010">My Favorites From Rails Rumble 2010</a>
+  </li>
+  
+  <li>
+    <span>September 24, 2010</span> <a href="/2010/09/hey-twitter-give-us-our-tweets">Hey Twitter: Give us our Tweets</a>
+  </li>
+  
+  <li>
+    <span>September 13, 2010</span> <a href="/2010/09/fatigue-import-nike-into-garmin-connect">A Nike+ Importer for Garmin</a>
+  </li>
+  
+  <li>
+    <span>September  7, 2010</span> <a href="/2010/09/how-to-discover-your-music">How to Discover Your Music</a>
+  </li>
+  
+  <li>
+    <span>August 20, 2010</span> <a href="/2010/08/dotfiles-are-meant-to-be-forked">Dotfiles Are Meant to Be Forked</a>
+  </li>
+  
+  <li>
+    <span>August 10, 2010</span> <a href="/2010/08/apple-online">Apple OnLine 4.0</a>
+  </li>
+  
+  <li>
+    <span>July 28, 2010</span> <a href="/2010/07/enslaving-branches-how-github-does-enterprise">Enslaving Branches: How GitHub Does Enterprise</a>
+  </li>
+  
+  <li>
+    <span>July 18, 2010</span> <a href="/2010/07/iphone-antenna-thing">Is that the new iPhone with the antenna thing?</a>
+  </li>
+  
+  <li>
+    <span>June 17, 2010</span> <a href="/2010/06/web-apps-arent-apps">Web Apps Aren't Apps</a>
+  </li>
+  
+  <li>
+    <span>May 26, 2010</span> <a href="/2010/05/androidvertising">Androidvertising</a>
+  </li>
+  
+  <li>
+    <span>May 23, 2010</span> <a href="/2010/05/the-clean-slate">The Clean Slate</a>
+  </li>
+  
+  <li>
+    <span>May  8, 2010</span> <a href="/2010/05/rebuild-facebook">Rebuild Facebook</a>
+  </li>
+  
+  <li>
+    <span>April 27, 2010</span> <a href="/2010/04/apple-is-petrified">Apple is Petrified</a>
+  </li>
+  
+  <li>
+    <span>April 17, 2010</span> <a href="/2010/04/gizmodo">Gizmodo</a>
+  </li>
+  
+  <li>
+    <span>April  6, 2010</span> <a href="/2010/04/cloudy-with-a-chance-of-clients">Cloudy With a Chance of Clients</a>
+  </li>
+  
+  <li>
+    <span>April  3, 2010</span> <a href="/2010/04/the-soloist">The Soloist</a>
+  </li>
+  
+  <li>
+    <span>March  6, 2010</span> <a href="/2010/03/your-ad-blocker-probably-blocked-this-post">Your Ad Blocker Probably Blocked This Post</a>
+  </li>
+  
+  <li>
+    <span>March  1, 2010</span> <a href="/2010/03/the-human-is-a-restful-client">The Human is a RESTful Client</a>
+  </li>
+  
+  <li>
+    <span>February 13, 2010</span> <a href="/2010/02/boastful-a-new-tweetback-library-for-your-blog">Boastful, a new tweetback library for your blog</a>
+  </li>
+  
+  <li>
+    <span>February  5, 2010</span> <a href="/2010/02/the-future-of-itunes">The Future of iTunes</a>
+  </li>
+  
+  <li>
+    <span>January 30, 2010</span> <a href="/posts/legacy-migrations-in-rails">Legacy Migrations in Rails</a>
+  </li>
+  
+  <li>
+    <span>January 27, 2010</span> <a href="/2010/01/ipad-ambiguity">iPad Ambiguity</a>
+  </li>
+  
+  <li>
+    <span>January 24, 2010</span> <a href="/2010/01/immeasurably-improve-your-life-by-34-percent">Immeasurably Improve Your Life by 34 Percent</a>
+  </li>
+  
+  <li>
+    <span>January 20, 2010</span> <a href="/2010/01/simplifying-rails-controllers-with-named_scopes">Simplifying Rails Controllers with named_scopes</a>
+  </li>
+  
+  <li>
+    <span>January 18, 2010</span> <a href="/2010/01/wii-failure">WiiFailure™</a>
+  </li>
+  
+  <li>
+    <span>January 17, 2010</span> <a href="/2010/01/getting-real-real-tasty">Getting Real. Real Tasty.</a>
+  </li>
+  
+  <li>
+    <span>November 30, 2009</span> <a href="/2009/11/because-11mbps-is-better-than-10mbps">Because 11Mbps is better than 10Mbps</a>
+  </li>
+  
+  <li>
+    <span>November 10, 2009</span> <a href="/2009/11/more-logical-file-system-organization-with-itunes-9">More Logical File System Organization with iTunes 9</a>
+  </li>
+  
+  <li>
+    <span>October 19, 2009</span> <a href="/2009/10/positioning-apple/">Positioning Apple</a>
+  </li>
+ </ul>
+      </section>
+    </div>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js
+"></script>
+    </body>
+</html>
