@@ -184,7 +184,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Source Code Pro";
   font-size: 1em; }
 
 /* Forms
@@ -693,3 +693,31 @@ nav.breadcrumb .active {
 
 .about p {
   font-family: "Source Code Pro"; }
+
+
+.post {
+  font-family: "Source Code Pro";
+  max-width: 38em;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+.post h2 {
+  font-family: "Source Code Pro";
+  font-size: 1.2em;
+}
+.meta { color: grey; font-size: 1em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

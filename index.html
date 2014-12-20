@@ -1,43 +1,20 @@
-<!doctype html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@tallandnerdy</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.neSource+Code+Pro:400,600,700,90Source+Sans+Pro:400,600,900,400i">
-    <link rel="stylesheet" href="css/style.css"> 
-  </head>
-  <body>
-    <div class="container">
-      <header>
-  <div id="logo">
-    <h1>ryan allen</h1>
-    <h2>front-end developer</h2>
-  </div>
-  <nav class="breadcrumb">
-    <a href="/" class="active">blog</a> /
-    <a href="/projects.html">projects</a> /
-    <a href="/resources.html">resources</a>
-  </nav>
-</header>
-      <section class="about">
-        <p>
-           I'm a front-end developer building and designing responsive websites &amp; applications. I'm currently in San Marcos, Texas &ndash; just south of Austin.
-        </p>
-      </section>
-      <section class="posts">
-        <ul class="posts-ul"> 
+---
+layout: default
+title: Ryan Allen
+---
+   
+    <section class="about">
+      <p>I'm a front-end developer building and designing responsive websites &amp; applications. I'm currently in San Marcos, Texas &ndash; just south of Austin.
+      </p>
+    </section>
+    <section class="posts">
+      <ul class="posts-ul"> 
+        {% for post in site.posts %}
           <li>
-            <span>October 16, 2014</span> <a href="/posts/inertia">Inertia</a>
-          </li>
-          <li>
-            <span>October  3, 2014</span> <a href="/talk/move-fast-break-nothing">Move Fast and Break Nothing</a>
-          </li>
-        </ul>
-      </section>
-    </div>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+          <span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   </body>
 </html>
