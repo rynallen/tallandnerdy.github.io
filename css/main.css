@@ -184,7 +184,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Source Code Pro";
+  font-family: monospace, monospace;
   font-size: 1em; }
 
 /* Forms
@@ -356,19 +356,19 @@ th {
 
 button,
 input[type="submit"] {
-  border: 1px solid #2459a6;
+  border: 1px solid #1d6bff;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #89a8d5;
+  box-shadow: inset 0 1px 0 0 #b4cdfc;
   color: white;
   display: inline-block;
   font-size: inherit;
   font-weight: bold;
-  background-color: #477DCA;
-  background-image: -webkit-linear-gradient(#477DCA, #2760b2);
-  background-image: linear-gradient(#477DCA, #2760b2);
+  background-color: #649AFF;
+  background-image: -webkit-linear-gradient(#649AFF, #2c75ff);
+  background-image: linear-gradient(#649AFF, #2c75ff);
   padding: 7px 18px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #1b4f9a;
+  text-shadow: 0 1px 0 #085eff;
   background-clip: padding-box;
   -webkit-font-smoothing: antialiased;
   font-size: 1em;
@@ -376,15 +376,15 @@ input[type="submit"] {
   line-height: 1em; }
   button:hover:not(:disabled),
   input[type="submit"]:hover:not(:disabled) {
-    box-shadow: inset 0 1px 0 0 #628cc8;
+    box-shadow: inset 0 1px 0 0 #82acfa;
     cursor: pointer;
-    background-color: #3c71bb;
-    background-image: -webkit-linear-gradient(#3c71bb, #255aa5);
-    background-image: linear-gradient(#3c71bb, #255aa5); }
+    background-color: #4e8afb;
+    background-image: -webkit-linear-gradient(#4e8afb, #1d6bff);
+    background-image: linear-gradient(#4e8afb, #1d6bff); }
   button:active:not(:disabled),
   input[type="submit"]:active:not(:disabled) {
-    border: 1px solid #2459a6;
-    box-shadow: inset 0 0 8px 4px #235397, inset 0 0 8px 4px #235397, 0 1px 1px 0 #eee; }
+    border: 1px solid #1d6bff;
+    box-shadow: inset 0 0 8px 4px #0d62ff, inset 0 0 8px 4px #0d62ff, 0 1px 1px 0 #eee; }
   button:disabled,
   input[type="submit"]:disabled {
     opacity: 0.5;
@@ -392,13 +392,13 @@ input[type="submit"] {
 
 body {
   color: #333333;
-  font-family: "Source Sans Pro";
+  font-family: "Source Code Pro";
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans Pro";
+  font-family: "Source Code Pro";
   line-height: 1.25em;
   margin: 0;
   text-rendering: optimizeLegibility; }
@@ -425,15 +425,15 @@ p {
   margin: 0 0 0.75em; }
 
 a {
-  color: #477DCA;
+  color: #649AFF;
   text-decoration: none;
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear; }
   a:hover {
-    color: #2c5999; }
+    color: #1868ff; }
   a:active, a:focus {
-    color: #2c5999;
+    color: #1868ff;
     outline: none; }
 
 hr {
@@ -483,7 +483,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "Source Sans Pro";
+  font-family: "Source Code Pro";
   font-size: 1em; }
 
 label {
@@ -507,7 +507,7 @@ select[multiple=multiple] {
   border-radius: 0.1875em;
   border: 1px solid #DDD;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "Source Sans Pro";
+  font-family: "Source Code Pro";
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
@@ -519,8 +519,8 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #477DCA;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    border-color: #649AFF;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(75, 137, 255, 0.7);
     outline: none; }
 
 textarea {
@@ -560,7 +560,6 @@ input[type="submit"] {
 table {
   border-collapse: collapse;
   margin: 0.75em 0;
-  table-layout: fixed;
   width: 100%; }
 
 th {
@@ -580,6 +579,15 @@ ul, ol {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+  .post ul {
+    list-style-type: disc;
+    margin-bottom: 0.75em;
+    padding-left: 1.5em; }
+  .post ol {
+    list-style-type: decimal;
+    margin-bottom: 0.75em;
+    padding-left: 1.5em; }
+
 dl {
   line-height: 1.5em;
   margin-bottom: 0.75em; }
@@ -594,12 +602,12 @@ dl {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-a {
-  color: #333333;
-  font-weight: 600; }
-
 body {
-  padding: 0 6%; }
+  padding: 0 6%;
+  background-color: white; }
+  @media screen and (min-width: 40em) {
+    body {
+      background-color: #f9f9f9; } }
 
 .container {
   max-width: 68em;
@@ -610,41 +618,46 @@ body {
     display: table;
     clear: both; }
 
+.posts {
+  margin: 4em auto; }
+
+.posts {
+  max-width: 35em; }
+
+.related-posts {
+  max-width: 42em;
+  margin: 0 auto; }
+
+.about {
+  max-width: 35em;
+  margin: 3em auto; }
+
 header {
   max-width: 38em;
-  margin: 3em auto;
-  font-family: "Source Code Pro"; }
+  margin: 2em auto;
+  margin-bottom: 0; }
 
 #logo {
   display: block;
   margin: 0 auto;
   text-align: center;
   max-width: 38em; }
-  #logo h1, #logo h2 {
-    font-family: "Source Code Pro"; }
   #logo h1 {
     color: #649AFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     font-weight: 900;
-    font-size: 1.5em; }
+    font-size: 1.2em; }
   #logo h2 {
     color: #999999;
+    text-transform: lowercase;
+    letter-spacing: 1px;
     font-weight: normal;
-    font-size: 1em; }
-
-.about, .posts {
-  margin-top: 4em;
-  margin-left: auto;
-  margin-right: auto; }
-
-.about {
-  max-width: 29em; }
-
-.posts {
-  max-width: 35em; }
+    font-size: 0.9em; }
 
 /* NAVIGATION */
 nav.breadcrumb {
-  font-size: 1em;
+  font-size: 0.8em;
   color: #ccc;
   margin: 2em auto;
   width: 100%;
@@ -653,7 +666,10 @@ nav.breadcrumb {
 nav.breadcrumb a {
   margin: 0 5px;
   text-decoration: none;
-  color: #999; }
+  color: #999;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 nav.breadcrumb a:first-child {
   margin-left: 0; }
@@ -671,8 +687,7 @@ nav.breadcrumb .active {
   color: #333; }
 
 .posts-ul {
-  font-size: 0.85em;
-  font-family: "Source Code Pro"; }
+  font-size: 0.85em; }
   @media screen and (min-width: 40em) {
     .posts-ul {
       font-size: 1em; } }
@@ -691,33 +706,78 @@ nav.breadcrumb .active {
     font-size: 0.75em;
     color: #999999; }
 
-.about p {
-  font-family: "Source Code Pro"; }
-
+.post-navigation nav {
+  margin: 4em auto; }
 
 .post {
-  font-family: "Source Code Pro";
-  max-width: 38em;
-  margin: 0 auto;
-  margin-top: 4em;
-}
+  font-size: 0.87em;
+  max-width: 42em;
+  margin: 4em auto; }
+  .post h1 {
+    font-size: 0.9em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  @media screen and (min-width: 40em) {
+    .post {
+      font-size: 1em;
+      max-width: 42em;
+      padding: 3em;
+      background-color: white;
+      box-shadow: 0 2px 3px 1px rgba(170, 170, 170, 0.2); } }
 
-.post h2 {
-  font-family: "Source Code Pro";
-  font-size: 1.2em;
-}
-.meta { color: grey; font-size: 1em;}
+blockquote {
+  font-size: 0.9em; }
 
+.gist {
+  margin: 1em auto; }
 
+.meta {
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 3em; }
 
+.dotted-hr {
+  text-align: center;
+  color: #999999;
+  margin: 2em auto; }
 
+.related {
+  margin-top: 2em; }
+  .related h1 {
+    margin-bottom: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 2px; }
+  .related ul {
+    list-style-type: none;
+    padding-left: 0; }
+  .related li span {
+    font-size: 0.8em;
+    text-transform: uppercase; }
 
+@media screen and (min-width: 40em) {
+  .about {
+    font-size: 1em;
+    max-width: 42em;
+    padding: 3em;
+    background-color: white;
+    box-shadow: 0 2px 3px 1px rgba(170, 170, 170, 0.2); } }
+.about h1 {
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 1em 0; }
+.about span {
+  margin-right: 1em;
+  font-weight: 700;
+  color: #999999; }
 
-
-
-
-
-
-
-
-
+.arrow {
+  color: black; }

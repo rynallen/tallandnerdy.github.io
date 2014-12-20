@@ -3,18 +3,28 @@ layout: default
 title: Ryan Allen
 ---
    
-    <section class="about">
-      <p>I'm a front-end developer building and designing responsive websites &amp; applications. I'm currently in San Marcos, Texas &ndash; just south of Austin.
-      </p>
-    </section>
-    <section class="posts">
-      <ul class="posts-ul"> 
-        {% for post in site.posts %}
-          <li>
-          <span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </section>
+        <section class="about">
+        
+          <h1>About</h1>
+
+          <p>First. As in, before you write any code or tests or behaviors or stories or ANYTHING. I know, I know, we're programmers, dammit, not tech writers! But that's where you're wrong. Writing a Readme is absolutely essential to writing good software. Until you've written about your software, you have no idea what you'll be coding.</p>
+
+          <p>Between The Great Backlash Against Waterfall Design and The Supreme Acceptance of Agile Development, something was lost. Don't get me wrong, waterfall design takes things way too far. Huge systems specified in minute detail end up being the WRONG systems specified in minute detail.</p>
+        
+          <h1>Elseware</h1>
+        
+          <ul>
+            <li><span>code</span> / <a href="#">github.com/tallandnerdy</a></li>
+            <li><span>thoughts</span> / <a href="#">twitter.com/tallandnerdy</a></li>
+          </ul>
+        </section>
+        <section class="posts">
+  <ul>
+      <li><span>Mar 29, 2014</span> » <a href="/2011/11/22/open-source-everything.html">Open Source (Almost) Everything</a></li>
+      <li><span>Apr 07, 2014</span> » <a href="/2011/05/03/rejected-bio-from-the-setup.html">Rejected Bio from The Setup</a></li>
+      <li><span>Sep 01, 2015</span> » <a href="/2011/03/29/ten-lessons-from-githubs-first-year.html">Ten Lessons from GitHub's First Year</a></li>
+  </ul>
+</section>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   </body>
 </html>
